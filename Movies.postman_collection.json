@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "de9b5a26-4688-4df3-9553-b9558f6682ef",
+		"name": "Movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Distributors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/distributors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"distributors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributors by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/distributors?name=ABC1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"distributors"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ABC1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributors by _ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/distributors/5c3b5f8c7d39c81e9c2dd209",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"distributors",
+						"5c3b5f8c7d39c81e9c2dd209"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributors by _ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/distributors/5c3b5f927d39c81e9c2dd20a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"distributors",
+						"5c3b5f927d39c81e9c2dd20a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"ABC1\",\n\t\"rights\": {}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/distributors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"distributors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"ABC\",\n        \"rights\": {\n            \"included\": {\n                \"cityCode\": [],\n                \"provinceCode\": [],\n                \"countryCode\": [\"IN\"]\n            },\n            \"excluded\": {\n                \"cityCode\": [\"TIRAPI\"],\n                \"provinceCode\": [],\n                \"countryCode\": []\n            }\n        }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/distributors/5c3b5fa0cf0b221cc46e2382",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"distributors",
+						"5c3b5fa0cf0b221cc46e2382"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Citiy by City Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cities?cityName=Tirap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "cityName",
+							"value": "Tirap"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Citiy by _id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cities/5c3b3e4c6348960d9cbc5948",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cities",
+						"5c3b3e4c6348960d9cbc5948"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "City",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"cityCode\": \"ZHEAB\",\n        \"provinceCode\": \"TG\",\n         \"countryCode\": \"IN\",\n         \"cityName\": \"Zaheerabad\",\n        \"provinceName\": \"Telangana\",\n        \"countryName\": \"India\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "City",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n         \"cityCode\": \"ZHEAB\",\n        \"provinceCode\": \"TG\",\n        \"countryCode\": \"IN\",\n        \"cityName\": \"Zaheerabad\",\n        \"provinceName\": \"Telangana\",\n        \"countryName\": \"India\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cities/5c3b572dae1bc502f8be40d0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cities",
+						"5c3b572dae1bc502f8be40d0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Citiy by _id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cities/5c3b55a4f67d231cbc99885b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cities",
+						"5c3b55a4f67d231cbc99885b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
